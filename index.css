@@ -17,7 +17,8 @@ body {
 }
 
 .content-container {
-  margin: 20px 30px;
+  padding: 20px 30px;
+  box-sizing: border-box;
 }
 
 .logo {
@@ -84,5 +85,24 @@ input[type="submit"] {
     -webkit-box-shadow: -2px 5px 21px -7px rgba(0,0,0,0.78); 
     box-shadow: -2px 5px 21px -7px rgba(0,0,0,0.78);
     height: 350px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .container {
+    width: 440px;
+    display: flex;
+  }
+
+  .content-container {
+    width: 50%;
+    height: 100%;
+  }
+
+  .image-container {
+    width: 50%;
+    height: 100%;
+    background: bottom / cover url('./workers.jpg');
+    background-repeat: no-repeat;
   }
 }
